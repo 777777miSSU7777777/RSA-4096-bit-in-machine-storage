@@ -13,6 +13,7 @@ namespace RSA
 
         static CryptService()
         {
+            RSACryptoServiceProvider.UseMachineKeyStore = true;
             RSA = new RSACryptoServiceProvider(KeySize);
         }
 
